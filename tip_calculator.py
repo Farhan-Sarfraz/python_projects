@@ -1,7 +1,7 @@
 print("\nWelcome to thw tip calcculator : ")
 
-bill = float(input("what's the total bill is = ??"))
-tip_percentage = int(input("what percenatge tip you want to give of total bill 10,12,15  = ??"))
+bill = float(input("what's the total bill is ="))
+tip_percentage = int(input("what percenatge tip you want to give of total bill 10,12,15  = "))
 persons = int(input("total person in trip = "))
 
 tip_per = int(tip_percentage) / 100
