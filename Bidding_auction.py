@@ -1,4 +1,6 @@
 
+print("=== secret bidding auction system === ")
+
 bids = {}
 bidding_finished = False
 def find_highest_bidder(bidder_record):
