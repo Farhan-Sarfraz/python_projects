@@ -1,5 +1,6 @@
-cards = [11,2,3,4,5,6,7,8,9,10,10,10,10]
+
 import random 
+import os
 def deal_card():
     """ Returns a random card from the deck."""
     cards = [11,2,3,4,5,6,7,8,9,10,10,10,10]
@@ -69,5 +70,13 @@ def play_game():
 
     print(compare(user_score, computer_score))
 
-while input("Do you want to play blackjack game? type 'y' or 'n': ") == "y":
-    play_game()
+while True:
+    choice = input("Do you want to play Blackjack? Type 'y' or 'n': ").lower()
+    if choice == 'y':
+        os.system('cls' if os.name == 'nt' else 'clear')  
+        play_game()
+    elif choice == 'n':
+        print("Thanks for playing! Goodbye. ")
+        exit()
+    else:
+        print("Invalid input. Please type 'y' or 'n'.")
